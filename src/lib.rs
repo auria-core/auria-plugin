@@ -1,4 +1,4 @@
-use auria_core::{AuriaError, AuriaResult};
+use auria_core::AuriaResult;
 use async_trait::async_trait;
 
 #[async_trait]

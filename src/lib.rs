@@ -1,3 +1,10 @@
+// File: lib.rs - This file is part of AURIA
+// Copyright (c) 2026 AURIA Developers and Contributors
+// Description:
+//     Plugin system for extending AURIA Runtime Core.
+//     Provides dynamic loading and management of plugins for extensibility,
+//     allowing custom backends, routing algorithms, and hardware support.
+//
 use auria_core::AuriaResult;
 use async_trait::async_trait;
 

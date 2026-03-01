@@ -43,6 +43,7 @@ dependencies = [
  "async-trait",
  "auria-core",
  "libloading",
+ "serde",
  "thiserror",
  "tokio",
 ]

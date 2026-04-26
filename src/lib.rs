@@ -218,7 +218,6 @@ pub struct PluginInfo {
 
 pub struct PluginManager {
     registry: Arc<PluginRegistry>,
-    config: PluginConfig,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -242,14 +241,12 @@ impl PluginManager {
     pub fn new() -> Self {
         Self {
             registry: Arc::new(PluginRegistry::new()),
-            config: PluginConfig::default(),
         }
     }
 
-    pub fn with_config(config: PluginConfig) -> Self {
+    pub fn with_config(_config: PluginConfig) -> Self {
         Self {
             registry: Arc::new(PluginRegistry::new()),
-            config,
         }
     }
 
